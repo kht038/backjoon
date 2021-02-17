@@ -1,19 +1,40 @@
 #include <iostream>
 using namespace std;
-int main(void) {
 
-    int a, b;
+//int main(void) {
+//
+//    int a, b;
+//
+//    cin >> a >> b;
+//
+//    if (b < 45) {
+//        b += 15;
+//        if (--a < 0)
+//            a = 23;
+//    }
+//
+//    else
+//        b -= 45;
+//
+//    cout << a << " " << b << endl;
+//}
 
-    cin >> a >> b;
+int main()
+{
+	int H, M;
 
-    if (b < 45) {
-        b += 15;
-        if (--a < 0)
-            a = 23;
-    }
+	cin >> H >> M;
 
-    else
-        b -= 45;
+	if (M < 45)
+	{
+		M += 15;
 
-    cout << a << " " << b << endl;
+		if (--H < 0)
+			H = 23;
+	}
+	else {
+		M -= 45;
+	}
+
+	cout << H << " " << M << endl;
 }
